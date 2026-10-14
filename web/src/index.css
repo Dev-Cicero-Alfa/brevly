@@ -1,0 +1,56 @@
+@import 'tailwindcss';
+
+/* Style Guide (Figma Brev.ly) */
+@theme {
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+
+  --color-blue-base: #2c46b1;
+  --color-blue-dark: #2c4091;
+
+  --color-white: #ffffff;
+  --color-gray-100: #f9f9fb;
+  --color-gray-200: #e4e6ec;
+  --color-gray-300: #cdcfd5;
+  --color-gray-400: #74798b;
+  --color-gray-500: #4d505c;
+  --color-gray-600: #1f2025;
+
+  --color-danger: #b12c4d;
+
+  /* Tipografia */
+  --text-xl: 1.5rem; /* 24px */
+  --text-xl--line-height: 2rem;
+  --text-lg: 1.125rem; /* 18px */
+  --text-lg--line-height: 1.5rem;
+  --text-md: 0.875rem; /* 14px */
+  --text-md--line-height: 1.125rem;
+  --text-sm: 0.75rem; /* 12px */
+  --text-sm--line-height: 1rem;
+  --text-xs: 0.625rem; /* 10px */
+  --text-xs--line-height: 0.875rem;
+}
+
+@layer base {
+  * {
+    @apply border-gray-200;
+  }
+
+  html,
+  body,
+  #root {
+    @apply min-h-dvh;
+  }
+
+  body {
+    @apply bg-gray-200 font-sans text-gray-600 antialiased;
+  }
+}
+
+@keyframes loading {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(300%);
+  }
+}
